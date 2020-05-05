@@ -1,9 +1,8 @@
 <?php
-    // session_name("Auth System");
-    // session_start([
-    //     'cookie_lifetime'=>240 //4 minit
-    // ]);
-    session_start();
+    session_name("Auth System");
+    session_start([
+        'cookie_lifetime'=>240 //4 minit
+    ]);
     $error = false;
 
     if(isset($_POST['name']) && isset($_POST['password'])){
